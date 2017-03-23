@@ -2,10 +2,10 @@ require 'sinatra'
 
 get "/" do
 	@name = "desconocido"			
-	erb :view
+	erb :index
 end
 	
-get "/maker/:nombre" do 
+get "/makers/:nombre" do 
 	@name = params[:nombre]
-	erb :view
+	erb :index
 end
